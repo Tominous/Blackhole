@@ -22,7 +22,7 @@ public class Blackhole extends JavaPlugin {
 		this.getCommand("blackhole").setExecutor(cmd);
 		this.getServer().getPluginManager().registerEvents(new BHListener(this), this);
 		storage = new BHStorage(this);
-	//	storage.reloadConfig();
+			storage.reloadConfig();
 		manager = new BHManager(this);
 		if (Bukkit.getPluginManager().isPluginEnabled("PacketListenerApi") && Bukkit.getPluginManager().isPluginEnabled("GlowAPI")) {
 			packetlistenerenabled = true;

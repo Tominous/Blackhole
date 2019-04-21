@@ -137,7 +137,7 @@ public class Blackholes {
 	public boolean isOwner(Player p) {
 		return p.getUniqueId() == owneruuid;
 	}
-/*	public void createNewDragon() {
+	public void createNewDragon() {
 		if (ed != null) {
 			ed.remove();
 		}
@@ -153,7 +153,7 @@ public class Blackholes {
 				ed.damage(3500.0);
 			}
 		}.runTaskLater(Blackhole.getInstance(), 1L);
-	}*/
+	}
 	public Location getLocation() {
 		return this.loc;
 	}
